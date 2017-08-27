@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Accessible Studio | Page principale</title>
+
+    <link href="css/normalize.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+
+    <!-- Expliter l'utilite des role -->
+    <nav role="navigation" class="main-nav">
+      <ul>
+        <li><a href="index.html">Accessible Studio</a></li>
+        <li><a class="active" href="index.html">Accueil</a></li>
+        <li><a href="prestation.html">Prestation</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+
+    <!-- On va inserer une banniere ici -->
+    <header role="banner" class="main-header">
+      <h1>Accessible Studio</h1>
+      <p>Agence digitale et marketing</p>
+    </header>
+    <!-- fin insertion de la banniere -->
+
+
+    <main role="main" class="main-section">
+          <div class="band-info album clearfix">
+            <div class="album-img">
+              <img class="photo" src= "img/digital-marketing.jpg" alt="Photographie de nos prestations marketing">
+            </div>
+            <div class="information">
+              <h2 class="heading">Nouveau : nous realisons maintenant pour vous vos prestations marketing</h2>
+              <p>Photo booth aliquip pinterest meggings. Sapiente commodo wolf put a bird on it fingerstache gentrify, meh polaroid vegan everyday carry.</p>
+              <a href="#" class="btn-buy">En savoir plus</a>
+            </div>
+          </div>
+
+          <div class="band-info about clearfix">
+            <div class="band-img">
+              <img class="photo" src= "img/graphic-design-studio.jpg" alt="Photographie de notre processus de developpement">
+            </div>
+            <div class="information">
+              <h2>A propos de l'entreprise</h2>
+              <p>Photo booth aliquip pinterest meggings. Sapiente commodo wolf put a bird on it fingerstache gentrify, meh polaroid vegan everyday carry.</p>
+            </div>
+          </div>
+        </main>
+
+
+    <!-- Penser a ajouter des icones -->
+    <footer role="contentinfo" class="main-footer">
+      <ul>
+        <li><a href="#" class="social twitter">Aller sur notre page Twitter</a></li>
+        <li><a href="#" class="social youtube">Aller sur notre page youtube</a></li>
+      </ul>
+      <p class="copyright">Copyright 2017, Accessible Studio</p>
+    </footer>
+
+  </body>
+</html>

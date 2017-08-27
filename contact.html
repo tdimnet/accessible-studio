@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Accessible Studio | Page de contact</title>
+
+    <link href="css/normalize.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+
+    <!-- Expliter l'utilite des role -->
+    <nav role="navigation" class="main-nav">
+      <ul>
+        <li><a href="index.html">Accessible Studio</a></li>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="prestation.html">Prestation</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+
+    <header role="banner" class="main-header">
+      <h1>Accessible Studio</h1>
+      <p>Agence digitale et marketing</p>
+    </header>
+
+
+    <main role="main">
+      <div class="first-form clearfix">
+        <h2>Contactez-nous</h2>
+        <div class="form-img">
+          <img class="photo" src= "img/concert01.jpg" alt="Photograph of one of our indoor concert">
+        </div>
+          <div class="container survey-form-container">
+            <form class="survey" action="#" method="post">
+              <fieldset>
+                <legend>Contactez l'Accessible Studio</legend>
+                <p>
+                  <label>Vous etes :</label>
+                  <br>
+                  <input type="radio" id="particulier" value="particulier" name="type-entreprise">
+                  <label for="particulier">Un particulier</label>
+                  <input type="radio" id="TPE" value="TPE" name="type-entreprise">
+                  <label for="TPE">Une TPE</label>
+                  <input type="radio" id="PME" value="PME" name="type-entreprise">
+                  <label for="PME">Une PME</label>
+                  <input type="radio" id="autre" value="autre" name="type-entreprise">
+                  <label for="autre">Autre</label>
+                </p>
+
+                <p>
+                <label for="recherche-prestation">Vous desirez :</label>
+                <br>
+                  <select id="recherche-prestation" name="recherche-prestation">
+                    <option value="" disabled selected hidden>Choisir une option</option>
+                    <option value="creation-site-web">Créer de votre site web</option>
+                    <option value="campagne-emails">Realiser une campagne d'e-mails</option>
+                    <option value="wireframes">Realiser des wireframes</option>
+                    <option value="design">Créer le design de votre projet</option>
+                    <option value="id-graphique">Créer votre identité graphique</option>
+                    <option value="autre">Autre chose</option>
+                  </select>
+                </p>
+
+                <p>
+                  <label for="description-demande">Veuillez decrire votre demande et votre projet en quelques mots :</label>
+                  <br>
+                  <textarea name="description-demande" id="description-demande"></textarea>
+                </p>
+              </fieldset>
+              <button type="submit">Envoyez votre demande.</button>
+            </form>
+          </div><!-- END: Container -->
+      </div><!-- END: First-Form -->
+
+      <div class="second-form clearfix">
+        <h2 class="heading">Inscription a la newsletter</h2>
+        <div class="form-img">
+          <img class="photo" src= "img/the_band.jpg" alt="Photograph of our drummer and bass guitarist on stage">
+        </div>
+        <div class="container newsletter-form-container">
+          <form class="newsletter">
+            <fieldset>
+              <legend>La newsletter d'Accessible Studio</legend>
+                <p>
+                  <label for="name">Votre prenom :</label>
+                  <br>
+                  <input type="text" id="name" name="user_fullname" placeholder="exemple : Thomas">
+                </p>
+
+                <p>
+                  <label for="email">Votre e-mail :</label>
+                  <br>
+                  <input type="email" id="email" name="user_email" placeholder="exemple : thomas@votre-email.com">
+                </p>
+
+                <p>
+                  <label for="confirm_email">Confirmez votre e-mail :</label>
+                  <br>
+                  <input type="email" id="confirm_email" name="user_confirm_email" placeholder="exemple : thomas@votre-email.com">
+                </p>
+              </fieldset>
+              <button type="submit">S'inscrire</button>
+            </form>
+          </div>
+        </div>
+    </main>
+
+
+    <!-- Penser a ajouter des icones -->
+    <footer role="contentinfo" class="main-footer">
+      <ul>
+        <li><a href="#" class="social twitter">Go to our Twitter page</a></li>
+        <li><a href="#" class="social youtube">Go to our Youtube page</a></li>
+        <li><a href="#" class="social spotify">Go to our Spotify page</a></li>
+      </ul>
+      <p class="copyright">Copyright 2017, Accessible Studio</p>
+    </footer>
+
+  </body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Accessible Studio | Page de prestation</title>
+
+    <link href="css/normalize.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+
+    <!-- Expliter l'utilite des role -->
+    <nav role="navigation" class="main-nav">
+      <ul>
+        <li><a href="index.html">Accessible Studio</a></li>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a class="active" href="prestation.html">Prestation</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+
+    <header role="banner" class="main-header">
+      <h1>Accessible Studio</h1>
+      <p>Agence digitale et marketing</p>
+    </header>
+
+
+    <main role="main" class="main-section">
+      <div class="tour-page">
+        <div class="tour-dates">
+          <!-- <img class="pick" src= "img/guitar_pick_green.png" alt> -->
+          <h2>Nos prestations</h2>
+          <!-- <img class="pick" src= "img/guitar_pick_green.png" alt> -->
+        </div>
+        <article class="flex">
+          <table class="tour-dates-table">
+            <caption>Vous trouverez sur ce tableau les tarifs de nos prestations</caption>
+            <thead>
+              <tr>
+                <th id="prestation" scope="col">Prestation</th>
+                <th id="prix-par-heure" scope="col">Prix par heure</th>
+                <th id="description-de-la-prestation" scope="col">Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th id="integration-web" headers="prestation" scope="row">Integration web</th>
+                <td headers="prix-par-heure integration-web">35€</td>
+                <td headers="description-de-la-prestation integration-web">Integration complete de sites webs</td>
+              </tr>
+              <tr>
+                <th id="gestion-de-projet" headers="prestation" scope="row">Gestion de projet</th>
+                <td headers="prix-par-heure gestion-de-projet">43€</td>
+                <td headers="description-de-la-prestation estion-de-projet">Gestion de projets multimedias en methode classique</td>
+              </tr>
+              <tr>
+                <th id="community-management" headers="prestation" scope="row">Community Management</th>
+                <td headers="prix-par-heure community-management">38€</td>
+                <td headers="description-de-la-prestation community-management">Gestion de commumauté</td>
+              </tr>
+              <tr>
+                <th id="design" headers="prestation" scope="row">Design</th>
+                <td headers="prix-par-heure design">34€</td>
+                <td headers="description-de-la-prestation design">Creation de wireframes et de template</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+      </div>
+    </main>
+
+
+    <!-- Penser a ajouter des icones -->
+    <footer role="contentinfo" class="main-footer">
+      <ul>
+        <li><a href="#" class="social twitter">Go to our Twitter page</a></li>
+        <li><a href="#" class="social youtube">Go to our Youtube page</a></li>
+        <li><a href="#" class="social spotify">Go to our Spotify page</a></li>
+      </ul>
+      <p class="copyright">Copyright 2017, Accessible Studio</p>
+    </footer>
+
+  </body>
+</html>
